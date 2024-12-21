@@ -11,7 +11,7 @@ This is my personal portfolio website, built using HTML and CSS. It’s a place 
 - **Contact**: How do you get in touch with me?  
 - It looks great on all devices—phones, tablets, and computers!  
 
-## Septs to set up Locally:  
+## Steps to set up Locally:  
 ### Steps:  
 1. **Download the Project**:  
    Get the files on your computer:  
@@ -24,3 +24,8 @@ This is my personal portfolio website, built using HTML and CSS. It’s a place 
    ```bash
    cd <repository-name>
    ```  
+3. **View the Project**:
+    Open the index.html file in the browser 
+
+4. **Perform Any Changes**:
+    Change the index.html to new content and style in the Web Page 
