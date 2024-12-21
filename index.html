@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Yadav's Portfolio</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1, h2, h3, p {
+      margin-bottom: 15px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 50px;
+      background-color: #ff6f61;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    /* About Section */
+    .about {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: white;
+      margin: 20px 0;
+    }
+
+    .image{
+      width: 550px;
+      /* height: 150px; */
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    /* Skills Section */
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .skills div {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      width: 120px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .skills div:hover {
+      background-color: #ff6f61;
+      color: white;
+    }
+
+    /* Projects Section */
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      width: 40%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f8f8f8;
+    }
+
+    .contact-info {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+
+    button:hover {
+      background-color: #e65f50;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Ankit Yadav</h1>
+    <p>Frontend Developer | Data Analyst | Backend Developer</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate software developer with experience in building scalable and user-friendly applications. I specialize in frontend and backend development and love tackling complex problems through coding.</p>
+    <img src="https://drive.google.com/file/d/1y_MYSjPBJTX82-96V-jzS4H8beQli6EH/view?usp=sharing" alt="Ankit Yadav's Profile Picture" class="image">
+  </section>
+ 
+  <!-- Skills Section -->
+  <section class="skills">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>React</div>
+    <div>Node.js</div>
+    <div>MongoDB</div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="card">
+      <h3>Real-Time Ticket Booking System</h3>
+      <p>A full-stack application built using React, Node.js, and MongoDB. It allows users to book tickets for buses, flights, and hotels.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h3>Sustainable Travel Planner</h3>
+      <p>A travel planning app designed to help users book eco-friendly trips, using React, Vite, and Node.js.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Information</h2>
+    <button onclick="toggleContact()">Show Contact Info</button>
+    <div class="contact-info" id="contactInfo">
+      <p>Email: ankit@example.com</p>
+      <p>Phone: 123-456-7890</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ankit-yadav" target="_blank">ankit-yadav</a></p>
+      <p>GitHub: <a href="https://github.com/ankityadav" target="_blank">ankityadav</a></p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Ankit Yadav</p>
+  </footer>
+
+  <!-- JavaScript for Interactivity -->
+  <script>
+    // Function to toggle the contact information visibility
+    function toggleContact() {
+      const contactInfo = document.getElementById('contactInfo');
+      const button = document.querySelector('button');
+      if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
+        contactInfo.style.display = "block";
+        button.innerText = "Hide Contact Info";
+      } else {
+        contactInfo.style.display = "none";
+        button.innerText = "Show Contact Info";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
