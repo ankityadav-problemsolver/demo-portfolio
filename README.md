@@ -55,7 +55,8 @@ Here’s what you’ll see when you open the website:
 
 - **Desktop View**: The site will show a clean and well-organized layout with sections for about, skills, projects, and contact.
 
-
+![Desktop Home View](images/home.png)
+![Desktop Contact View](images/contact.png)
 
 ---
 
